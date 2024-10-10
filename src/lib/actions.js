@@ -108,7 +108,7 @@ export const addProduct = async (previousState, formData) => {
 
 export const finilizeProduct = async (productId, formData) => {
   try {
-    connectToDb(); // Ensure you have this function defined to connect to your database
+    await connectToDb(); // Ensure you have this function defined to connect to your database
 
     // Update the existing product by ID
     const updatedProduct = await Product.findByIdAndUpdate(
