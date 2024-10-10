@@ -22,7 +22,7 @@ const Card = async ({ product }) => {
   console.log(user)
   return (
     <>
-      {/* <div className="p-4 border">
+      <div className="p-4 border">
         <div>User Details</div>
         <div>Name : {user.name}</div>
         <div>Email : {user.email}</div>
@@ -36,7 +36,7 @@ const Card = async ({ product }) => {
         <div>Serial Number : {product.estimatedPrice}</div>
         <img src={product.imageUrl} width="200px" alt="" />
         <FinilizePrice/>
-      </div> */}
+      </div>
     </>
   );
 };
