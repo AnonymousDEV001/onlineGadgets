@@ -15,7 +15,7 @@ export default async function Home() {
               <img src={product.imageUrl} width="200px" alt="" />
               <h3 className="font-bold mx-6">{product.Brand}</h3>
               <p className="font-bold mx-7">{product.estimatedPrice}</p>
-              <Link href={session?.user?.name ? '/cart' : '/login'}>
+              <Link href={session?.user?.name ? '/cart' : '/signin'}>
                 <button>
                   Buy Product
                 </button>
