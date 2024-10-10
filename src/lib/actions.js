@@ -81,7 +81,7 @@ export const handleSignin = async (previousState, formData) => {
 
 
 export const addProduct = async (previousState, formData) => {
-  const { brand, year, condition, storage, defects,imei,image,delivery } =
+  const { brand, year, condition, storage, defects,imei,image,delivery,userId } =
     Object.fromEntries(formData);
   try {
     connectToDb();
@@ -94,7 +94,8 @@ export const addProduct = async (previousState, formData) => {
       defects,
       serialNumber:imei,
       imageUrl:image,
-      delivery
+      delivery,
+      userId
     });
     await newUser.save();
     return { success: "Product created successfully" };

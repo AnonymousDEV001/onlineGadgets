@@ -23,6 +23,7 @@ const Modal = ({
 
 
   const { data: session } = useSession();
+  console.log(session)
 
   const handleSubmit = async (e) => {
     if(session.user == undefined){
